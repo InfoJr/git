@@ -167,7 +167,7 @@ $ git commit -m "Alteração do estilo do rodapé"
 ## git pull
 Para puxarmos as atualizações do repositório central ao nosso local, executamos o seguinte comando:
 ```bash
-$ git pull {nome do repositório} {branch}
+$ git pull {nome do repositório remoto} {branch local}
 ```
 Caso tenha feito tudo conforme essa [seção](#definir-repositórios-remotos-em-sua-máquina), execute:
 
