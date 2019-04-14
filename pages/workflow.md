@@ -156,3 +156,47 @@ Ao executar o comando **git add**, é possível ver que agora o git já reconhec
 </p>
 
 **Dica**: É possível executar o comando **git add .** para adicionar todos os arquivos modificados como prontos a serem comentados. Para remover arquivos do estágio, é possível executar **git reset {arquivo}** ou **git reset .**
+
+## git commit
+Devemos comentar todos os arquivos adicionados utilizando [git add](#git-status) de modo claro e objetivo para que todos os membros da equipe saibam do que a alteração em questão se trata.
+
+```bash
+$ git commit -m "Alteração do estilo do rodapé"
+```
+
+## git pull
+Para puxarmos as atualizações do repositório central ao nosso local, executamos o seguinte comando:
+```bash
+$ git pull {nome do repositório} {branch}
+```
+Caso tenha feito tudo conforme essa [seção](#definir-repositórios-remotos-em-sua-máquina), execute:
+
+```bash
+$ git pull upstream master 
+```
+
+## git push
+Após comentarmos nossa atualização, devemos enviar nossas atualizações para o repositório remoto. Utilizamos:
+
+```bash
+$ git push 
+```
+
+**Importante**: Antes de executar esse comando, verifique se algum outro colega enviou uma alteração utilizando [git pull](#git-pull)
+
+---
+
+### **Não é possível executar git push ou git pull com arquivos sem commit**
+
+---
+
+## Pull request
+Um pull request é uma solicitação de alteração no repositório central.
+<br/>
+Após executar o [git push](#git-push), é necessário criar um pull request para que seu código seja mesclado com o principal.
+
+<p align="center">
+   <img src="../imgs/pr.png">
+</p>
+
+Como descrito na seção [ciclo de projeto](#ciclo-de-projeto), você deve referenciar o repositório e a branch para comparação e assim, criar o pull request.
