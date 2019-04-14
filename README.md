@@ -40,4 +40,4 @@ Cada membro da equipe possui uma cópia local em que desenvolve sua parte do pro
 Essa palavra foi mencionada na explicação anterior. O que seria isto? <br/>
 *push* é uma palavra reservada do git para executar o upload de um repositório para outro.
 
-Veja mais em nosso [glossário](https://github.com/infojr/git/blob/master/glossario.md)!
+Veja mais em nosso [*workflow*](pages/workflow.md)!
