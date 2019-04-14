@@ -176,7 +176,7 @@ $ git pull upstream master
 ```
 
 ## git push
-Após comentarmos nossa atualização, devemos enviar nossas atualizações para o repositório remoto. Utilizamos:
+Após comentarmos nossa atualização, devemos enviá-las para o repositório remoto. Utilizamos:
 
 ```bash
 $ git push 
