@@ -27,7 +27,7 @@ Para trabalhar com git e mantermos um padrão de desenvolvimento dentro da Info 
 
 ## Como usamos dentro da empresa?
 
-Utilizamos a metodologia *central-repo-to-working-copy colaboration*.
+Utilizamos a metodologia *central-repo-to-working-copy collaboration*.
 
 
 Cada membro da equipe possui uma cópia local em que desenvolve sua parte do projeto e assim que finalizar, executa um *push* para o repositório central que contém o projeto completo, localizado em https://github.com/InfoJr/{projeto}
