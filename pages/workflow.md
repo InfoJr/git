@@ -200,3 +200,31 @@ Após executar o [git push](#git-push), é necessário criar um pull request par
 </p>
 
 Como descrito na seção [ciclo de projeto](#ciclo-de-projeto), você deve referenciar o repositório e a branch para comparação e assim, criar o pull request.
+
+
+<p align="center">
+   <img src="../imgs/pr2.png">
+</p>
+
+Novamente, coloque um título claro e objetivo e adicione uma descrição caso necessário.
+<br/>
+**Falta pouco!** Agora você só precisa clicar em **Merge pull request** para que seu código seja mesclado com o repositório central.
+<p align="center">
+   <img src="../imgs/pr3.png">
+</p>
+
+E...
+
+
+<p align="center">
+   <img src="../imgs/merged.png">
+</p>
+
+Mesclado!
+
+
+---
+
+# Dúvidas?
+Git não é uma ferramenta fácil de aprender, possui uma curva de aprendizado grande. Não tenha vergonha de perguntar!<br/>
+Nesse tutorial estão apenas algumas funcionalidades essenciais do git, você pode conferir toda a documentação [aqui](https://git-scm.com/docs).
