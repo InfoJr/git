@@ -7,6 +7,9 @@
   - [Definição](#definição)<br/>
   -  [Ciclo de projeto](#ciclo-de-projeto)<br/>
   -  [Setup inicial](#setup-inicial)<br/>
+     - [Fork](#fork)<br/>
+     - [git clone](#git-clone)<br/>
+     - [Definir repositórios remotos em sua máquina](#definir-repositórios-remotos-em-sua-máquina)<br/>
   -  [Branches](#setup-inicial)<br/>
 2. [git status]()<br/>
 3. [git commit](#git-commit)<br/>
@@ -20,7 +23,40 @@
 Repositórios são pastas que possuem gerenciamento de versão através do git, ou seja, diretórios com git inicializado.
 
 ### Setup inicial
-No início de cada projeto, há tarefas importantíssimas a serem feitas 
+No início de cada projeto, é trivial seguir os seguintes itens:
+
+---
+
+#### Fork
+Fork é a criação de um repositório cópia remoto a partir do central. Pode ser dado clicando no botão **Fork** como demonstrado na imagem abaixo:
+
+<p align="center">
+   <img src="../imgs/fork.png">
+</p>
+
+---
+
+#### git clone
+Esse comando serve para clonar o repositório remoto para sua máquina.
+```bash
+$ git clone https://github.com/infojr/{projeto}
+```
+**Dica**: Se atente a executar esse comando no diretório onde está localizado o *htdocs*.
+
+---
+
+#### Definir repositórios remotos em sua máquina
+Após executar a clonagem do repositório, você agora possui um repositório local, porém, ele ainda não está configurado para reconhecer qual é o repositório central e qual o remoto.
+
+```bash
+$ git remote set-url origin https://github.com/{username}/{projeto}
+$ git remote add upstream https://github.com/infojr/{projeto}
+```
+
+**upstream** é o nome dado ao repositório central.
+
+---
+
 
 ### Ciclo de projeto
 <p align="center">
@@ -40,6 +76,7 @@ No início de cada projeto, há tarefas importantíssimas a serem feitas
 
 - Com o repositório central atualizado, qualquer membro pode baixar as atualizações com o comando [git pull](#git-pull) e continuar o desenvolvimento do projeto e dando início a esse ciclo novamente.
 
+**Observação**: Nunca envie sua atualização diretamente ao repositório central sem passar pelo remoto, o ciclo é essencial para revisões e possíveis reversões.
 
 ## git commit
 
