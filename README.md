@@ -3,6 +3,8 @@
 ![](https://img.shields.io/badge/documenta%C3%A7%C3%A3o-em%20desenvolvimento-informational.svg)
 
 
+## [Guia: Workflow](pages/workflow.md)
+
 ## O que é git?
 Git é um sistema de controle de versões.
 
