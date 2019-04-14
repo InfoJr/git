@@ -4,13 +4,13 @@
 <br/>
 ## Conteúdo
 1. [Repositórios](#repositórios)<br/>
-  - [Definição](#definição)<br/>
-  -  [Ciclo de projeto](#ciclo-de-projeto)<br/>
-  -  [Setup inicial](#setup-inicial)<br/>
-     - [Fork](#fork)<br/>
-     - [git clone](#git-clone)<br/>
-     - [Definir repositórios remotos em sua máquina](#definir-repositórios-remotos-em-sua-máquina)<br/>
-  -  [Branches](#setup-inicial)<br/>
+    - [Definição](#definição)<br/>
+    -  [Ciclo de projeto](#ciclo-de-projeto)<br/>
+    -  [Setup inicial](#setup-inicial)<br/>
+        - [Fork](#fork)<br/>
+        - [git clone](#git-clone)<br/>
+        - [Definir repositórios remotos em sua máquina](#definir-repositórios-remotos-em-sua-máquina)<br/>
+    -  [Branches](#setup-inicial)<br/>
 2. [git status]()<br/>
 3. [git commit](#git-commit)<br/>
 4. [git push]()<br/>
