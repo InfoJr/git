@@ -4,18 +4,20 @@
 <br/>
 ## Conteúdo
 1. [Repositórios](#repositórios)<br/>
-    - [Definição](#definição)<br/>
-    -  [Ciclo de projeto](#ciclo-de-projeto)<br/>
-    -  [Setup inicial](#setup-inicial)<br/>
+	- [Definição](#definição)<br/>
+    - [Ciclo de projeto](#ciclo-de-projeto)<br/>
+    - [Setup inicial](#setup-inicial)<br/>
         - [Fork](#fork)<br/>
         - [git clone](#git-clone)<br/>
         - [Definir repositórios remotos em sua máquina](#definir-repositórios-remotos-em-sua-máquina)<br/>
-    -  [Branches](#branches)<br/>
-2. [git status]()<br/>
-3. [git commit](#git-commit)<br/>
-4. [git push]()<br/>
-5. [git pull]()<br/>
-6. [pull request]()<br/>
+    - [Branches](#branches)<br/>
+2. [Desenvolvendo](#desenvolvendo)<br/>
+    - [Fluxo](#fluxo)
+    - [git status](#git-status)<br/>
+    - [git commit](#git-commit)<br/>
+    - [git push](#git-push)<br/>
+    - [git pull](#git-pull)<br/>
+    - [pull request](#pull-request)<br/>
 
 ## Repositórios
 
@@ -54,6 +56,13 @@ $ git remote add upstream https://github.com/infojr/{projeto}
 ```
 
 **upstream** é o nome dado ao repositório central.
+
+Caso tenha feito tudo certo, ao dar o comando **git remote -v**, o retorno do terminal deve estar semelhante à imagem abaixo:
+
+
+<p align="center">
+   <img src="../imgs/remote.png">
+</p>
 
 ---
 
@@ -110,5 +119,40 @@ Após isso, todos os arquivos do seu computador serão alterados para os present
 **Observação**: Nunca envie sua atualização diretamente ao repositório central sem passar pelo remoto, o ciclo é essencial para revisões e possíveis reversões.
 
 
-## git commit
+# Desenvolvendo
+Após, o [setup inicial](#setup-inicial) e entender mais sobre o que são [repositórios](#repositórios) e como se comportam, agora vamos ver como enviar e baixar as atualizações do projeto.
 
+## Fluxo
+O fluxo de desenvolvimento se resume basicamente em:
+- Sempre ao executar [git commit](#git-commit):
+    - Puxar atualizações. ([git pull](#git-pull))
+    - Verificar mensagem de retorno no terminal.
+    - Se o git acusar conflito:
+        - Resolver conflito <br/>**Dica**: Observe as linhas em que o git acusa conflito ou através da comparação feita pelo Visual Studio Code.
+    - Executar [git push](#git-push).
+
+## git status
+Esse comando nos informa quais arquivos foram alterados.
+
+```bash
+$ git status
+```
+<p align="center">
+   <img src="../imgs/status1.png">
+</p>
+Neste projeto, por exemplo, o arquivo <i>workflow.md</i> está diferente ao comparar o repositório remoto na branch master (origin/master).
+<br/>
+Para que seja possível enviarmos ao repositório remoto, precisamos rastrear o arquivo pelo git, utilizando o comando:
+
+```bash
+$ git add pages/workflow.md
+```
+
+Esse comando fará com que o git adicione esse arquivo para a lista de arquivos alterados nesse futuro [commit](#git-commit) que iremos fazer.
+<br/>
+Ao executar o comando **git add**, é possível ver que agora o git já reconhece o arquivo como pronto para ser comentado.
+<p align="center">
+   <img src="../imgs/status2.png">
+</p>
+
+**Dica**: É possível executar o comando **git add .** para adicionar todos os arquivos modificados como prontos a serem comentados. Para remover arquivos do estágio, é possível executar **git reset {arquivo}** ou **git reset .**
