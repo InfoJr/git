@@ -10,7 +10,7 @@
         - [Fork](#fork)<br/>
         - [git clone](#git-clone)<br/>
         - [Definir repositórios remotos em sua máquina](#definir-repositórios-remotos-em-sua-máquina)<br/>
-    -  [Branches](#setup-inicial)<br/>
+    -  [Branches](#branches)<br/>
 2. [git status]()<br/>
 3. [git commit](#git-commit)<br/>
 4. [git push]()<br/>
@@ -57,11 +57,42 @@ $ git remote add upstream https://github.com/infojr/{projeto}
 
 ---
 
+### Branches
+Uma branch é uma ramificação no projeto para que uma nova funcionalidade seja implementada ou testada sem que o código-fonte principal e/ou o desenvolvimento dos demais desenvolvedores seja comprometido.
+Para projetos robustos, tais como [SMA](https://github.com/infojr/projeto-sma) ou [iCampus](https://github.com/infojr/icampus), a utilização de branches é essencial.
+<p align="center">
+   <img src="../imgs/branches2.png">
+</p>
+<p align="center">
+   <img src="../imgs/branches.png">
+</p>
+
+
+<p align="center">
+    Análise da ramificação do <a href="https://github.com/infojr/icampus/network">iCampus</a> 
+</p>
+
+#### Comandos
+Para checar em que branch seu projeto se encontra, execute:
+```bash
+$ git branch
+```
+<br/>
+
+---
+Para criar uma nova branch em sua máquina, digite:
+```bash
+$ git checkout nome-da-branch
+```
+Após isso, todos os arquivos do seu computador serão alterados para os presentes na branch em questão automaticamente.
+
+**Dica**: Atente-se a qual branch você está trabalhando. (central ou local) 
 
 ### Ciclo de projeto
 <p align="center">
    <img src="../imgs/repos.png">
 </p>
+
 
 <p align="center">
     O fluxo do código nos repositórios é o mesmo em todo projeto.
@@ -77,6 +108,7 @@ $ git remote add upstream https://github.com/infojr/{projeto}
 - Com o repositório central atualizado, qualquer membro pode baixar as atualizações com o comando [git pull](#git-pull) e continuar o desenvolvimento do projeto e dando início a esse ciclo novamente.
 
 **Observação**: Nunca envie sua atualização diretamente ao repositório central sem passar pelo remoto, o ciclo é essencial para revisões e possíveis reversões.
+
 
 ## git commit
 
