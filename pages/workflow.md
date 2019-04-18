@@ -115,7 +115,13 @@ Para mudar para uma branch em sua máquina, digite:
 ```bash
 $ git checkout nome-da-branch
 ```
-Após isso, todos os arquivos do seu computador serão alterados para os presentes na branch em questão automaticamente. E caso a branch não exista, ela é criada.
+Após isso, todos os arquivos do seu computador serão alterados para os presentes na branch em questão automaticamente. 
+
+<br/>
+E caso a branch não exista, você pode criar uma a partir da sua atual digitando:
+```bash
+$ git checkout nome-da-branch -d
+```
 
 **Dica**: Atente-se a qual branch você está trabalhando. (central ou local) 
 
