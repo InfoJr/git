@@ -119,6 +119,7 @@ Após isso, todos os arquivos do seu computador serão alterados para os present
 
 <br/>
 E caso a branch não exista, você pode criar uma a partir da sua atual digitando:
+
 ```bash
 $ git checkout nome-da-branch -d
 ```
