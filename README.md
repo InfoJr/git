@@ -17,7 +17,7 @@ Git é um sistema de controle de versões.
 <br>
 
 ## Instalação recomendada
-Para trabalhar com git e mantermos um padrão de desenvolvimento dentro da Info Jr., vamos utilizar o **git bash** no qual manipularemos via CLI (command line interface).
+Para trabalhar com git e mantermos um padrão de desenvolvimento dentro da Info Jr., vamos utilizar o **git bash** no qual manipularemos por linha de comando.
 
 **Linux/Unix**: https://git-scm.com/download/linux
 
