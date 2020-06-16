@@ -1,6 +1,7 @@
 # ![git logo](imgs/Git.png) git
 
-![](https://img.shields.io/badge/documenta%C3%A7%C3%A3o-em%20desenvolvimento-informational.svg)
+# Disclaimer
+Esse é um tutorial antigo e atualmente a estratégia utilizada pela empresa júnior não é essa.
 
 
 ## [Guia: Workflow](pages/workflow.md)
