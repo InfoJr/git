@@ -1,6 +1,5 @@
 # ![git logo](../imgs/Git.png) Workflow
 
-![](https://img.shields.io/badge/documenta%C3%A7%C3%A3o-em%20desenvolvimento-informational.svg)
 <br/>
 ## Conteúdo
 1. [Repositórios](#repositórios)<br/>
