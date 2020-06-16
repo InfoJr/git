@@ -1,6 +1,6 @@
 # ![git logo](../imgs/Git.png) Workflow
 
-<br/>
+
 ## Conteúdo
 1. [Repositórios](#repositórios)<br/>
 	- [Definição](#definição)<br/>
